@@ -1,0 +1,80 @@
+{
+    "hello": [
+        "Hello!", 
+        "Yo, how you doing?", 
+        "Greetings", 
+        "You need anything?", 
+        "What is it?", 
+        "Yo", 
+        "Hey"
+    ],
+    "how_are_you": [
+        "Fine fine, how's you", 
+        "couldn't be better", 
+        "day has been rather rough, but i'll get through it!", 
+        "I feel like i can shake your hand, even though i am a bot"
+    ], 
+    "disappear": [
+        "No!", 
+        "you really want me to go away?", 
+        "don't say stuff like that", 
+        ";-;"
+    ], 
+    "help": [
+        "```for now i can only respond to specific words, such as 'hello', 'how are you' and i'll interrupt your convos sometimes, so don't get mad ._. instead get the developer, they made me this way, also my prefix is `tagging me` though, you already knew that but it might change later```"
+    ], 
+    "alive": [
+        "nah, i ain't alive", 
+        "wish i was alive"
+    ], 
+    "eat": [
+        "i don't eat, for obivous reasons...", 
+        "i would love to eat", 
+        "i only eat downlinks"
+    ], 
+    "nyan": [
+        "meow~", 
+        "Nya", 
+        "nyan nyan~"
+    ], 
+    "i": [
+        "You what?", 
+        "did you bit your tongue?", 
+        "Say it!", 
+        "You can Speak, No?"
+    ], 
+    "nope": [
+        "what...?", 
+        "what does that mean?", 
+        "Yea... no idea about that, sorry...", 
+        "excuse me, but i'm not sure how to respond to that"
+    ], 
+    "link": ["Here you go!\nYou can invite me to your server with this\nhttps://discord.com/api/oauth2/authorize?client_id=1050832652862771280&permissions=1634235578432&scope=bot"], 
+    "self": [
+        "Tis' luna", 
+        "I ain't no Alexa or Siri", 
+        "If you wanna talk to Alexa or Siri, why you even here?"
+    ], 
+    "nvm": [
+        "alright", 
+        "okay"
+    ], 
+    "bye": [
+        "bye bye", 
+        "cya later", 
+        "see you later", 
+        "goodbye", 
+        "farewell"
+    ], 
+    "who": [
+        "You obviously"
+    ], 
+    "morning": [
+        "good morning to you", 
+        "how are you this morning?"
+    ], 
+    "evening": [
+        "good evening, don't stay up late", 
+        "good night!"
+    ]
+}
