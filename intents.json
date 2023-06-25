@@ -43,13 +43,13 @@
         "Say it!", 
         "You can Speak, No?"
     ], 
+    "invalid": ["nope"],
     "nope": [
         "what...?", 
         "what does that mean?", 
         "Yea... no idea about that, sorry...", 
         "excuse me, but i'm not sure how to respond to that"
-    ], 
-    "link": ["Here you go!\nYou can invite me to your server with this\nhttps://discord.com/api/oauth2/authorize?client_id=1050832652862771280&permissions=1634235578432&scope=bot"], 
+    ],
     "self": [
         "Tis' luna", 
         "I ain't no Alexa or Siri", 

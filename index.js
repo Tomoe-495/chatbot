@@ -65,7 +65,7 @@ function getResponse(userInput, data) {
     return response;
 }
 
-function handleResponse(message) {
+function handleResponse(message, data) {
     const msg = message.trim();
 
     if (msg === "i") {
@@ -83,13 +83,30 @@ function handleResponse(message) {
 fetch('./intents.json')
 .then(response => response.json())
 .then(data => {
-        const messageInput = document.getElementById('message-input');
-        const responseOutput = document.getElementById('response-output');
+        const msg = document.querySelector("[data-msg]");
+        const container = document.querySelector("[data-messages]");
+        
+        msg.addEventListener('keypress', (event) => {
+            if (event.key == 'Enter'){
+                let message = msg.value;
+                let p = document.createElement("p");
+                p.classList.add("user");
+                let span = document.createElement("span");
+                span.innerHTML = message;
+                p.appendChild(span);
+                container.appendChild(p);
+                
+                const response = handleResponse(message, data);
+                let bot_p =  document.createElement("p");
+                bot_p.classList.add("bot");
+                let bot_span = document.createElement("span");
+                bot_span.innerHTML = response;
+                bot_p.appendChild(bot_span);
+                container.appendChild(bot_p);
 
-        document.getElementById('send-button').addEventListener('click', () => {
-        const message = messageInput.value;
-        const response = handleResponse(message);
-        responseOutput.textContent = response;
+                msg.value = "";
+
+            }
     });
 })
 .catch(error => {

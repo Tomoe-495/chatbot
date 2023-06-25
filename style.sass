@@ -1,0 +1,95 @@
+h1, p
+    margin: 0
+    padding: 0
+
+body
+    margin: 0
+    font-family: poppins
+    width: 100vw
+    height: 100vh
+    overflow-x: hidden
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.container
+    width: 50%
+    height: 90%
+    border-radius: 20px
+    background: #fff
+    filter: drop-shadow(rgba(0, 0, 0,.3) 2px 2px 5px)
+    position: relative
+    overflow: hidden
+
+
+    .header
+        z-index: 9
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        background-color: #aaa
+        padding: 8px 20px
+        p
+            font-size: 1.5em
+            font-weight: 600
+            color: #454545
+    
+    
+    input
+        font-family: inherit
+        width: 100%
+        padding: 20px 
+        border: none
+        transition: all 250ms
+        filter: drop-shadow(rgba(0, 0, 0, .2) 0 -2px 5px)
+        &:focus
+            outline: none
+            filter: drop-shadow(rgba(0, 0, 0, .4) 0 -2px 5px)
+
+
+    $rady: 7px
+    .chats
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        height: 100%
+        width: 100%
+
+        .messages
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            height: auto
+            padding: 10px 20px
+            gap: 5px
+            overflow-y: auto
+            p
+                display: flex
+                animation: appear 500ms ease
+                span
+                    background: rgb(245, 245, 245)
+                    filter: drop-shadow(rgba(0, 0, 0, .2) 0 2px 2px)
+                    padding: 5px 10px
+                    color: #353535
+                &.user
+                    justify-content: flex-end
+                    span
+                        border-radius: $rady 0 $rady $rady
+                &.bot
+                    span
+                        border-radius: 0 $rady $rady $rady
+
+
+
+@keyframes appear
+    0%
+        opacity: 0
+        transform: translateY(10px)
+    100%
+        opacity: 1
+        transform: translateY(0)
+        
